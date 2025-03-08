@@ -1,0 +1,57 @@
+{
+  "name": "fus",
+  "version": "1.0.0",
+  "description": "System do przeprowadzania sprawdzianów dla nauczycieli  ZS nr 2 w Ostrzeszowie",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --env-file=.env ./dist/server.js",
+    "build": "tsc ",
+    "dev": "npx  tsx  watch --env-file=.env  ./src/server.ts",
+    "test": "npx tsx --test  ./**/*.test.ts",
+    "eslint": "npx eslint **/*.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slodkiadrianek/FUS.git"
+  },
+  "keywords": [
+    "FUS"
+  ],
+  "author": "Adrian Kurek",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/slodkiadrianek/FUS/issues"
+  },
+  "homepage": "https://github.com/slodkiadrianek/FUS#readme",
+  "dependencies": {
+    "@prisma/client": "^6.4.1",
+    "bcryptjs": "^3.0.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "express-session": "^1.18.1",
+    "helmet": "^8.0.0",
+    "joi": "^17.13.3",
+    "jsonwebtoken": "^9.0.2",
+    "redis": "^4.7.0",
+    "winston": "^3.17.0",
+    "winston-daily-rotate-file": "^5.0.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.20.0",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/express-session": "^1.18.1",
+    "@types/joi": "^17.2.2",
+    "@types/jsonwebtoken": "^9.0.8",
+    "@types/node": "^22.13.10",
+    "eslint": "^9.20.1",
+    "globals": "^15.15.0",
+    "prisma": "^6.4.1",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.24.0"
+  }
+}
